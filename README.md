@@ -57,7 +57,7 @@ return svg+image tag
 
 4. asciified  
 return pre element or Promise.  
-If asiified process already happened, this will return exist <pre> tag, or it returns promise.
+If asiified process already happened, this will return exist pre tag, or it returns promise.
 so uou can use this API like below.
 
 ```
