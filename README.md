@@ -50,13 +50,13 @@ Only 2 option
 `new asciify-aalib(imageUrl, option)`
 
 2. ascii()  
-return <pre> tag
+return pre element
 
 3. svg()  
 return svg+image tag
 
 4. asciified  
-return <pre> tag or Promise.  
+return pre element or Promise.  
 If asiified process already happened, this will return exist <pre> tag, or it returns promise.
 so uou can use this API like below.
 
@@ -68,4 +68,4 @@ Promise.resolve()
   .then((pre) => resolve(this.asciified))
 ```
 5. asciiWidth / asciiHeight  
-This returns asciified <pre> element's size.
+This returns asciified pre element's size.
