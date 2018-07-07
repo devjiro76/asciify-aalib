@@ -32,7 +32,6 @@ export default class {
           return this.createAsciiElement(asciiWidth, asciiHeight)
         })
         .then(pre => {
-          console.log('inited')
           this.asciified = pre
           resolve(pre)
         })
