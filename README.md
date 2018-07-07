@@ -1,4 +1,6 @@
 # asciify-aalib
+This lib is created for private purpose.
+I recommend use the original libray (https://github.com/mir3z/aalib.js)
 
 ## install
 ```
@@ -36,4 +38,34 @@ myAsc.svg()
       ctx.drawImage(img, 0, 0, canvasWidth, canvasHeight)
     }
   })
-  ```
+```
+
+## option
+Only 2 option  
+1. ratio (original size is 1)
+2. targetWidth (target width compared with original image width)
+
+## API
+1. constructor  
+`new asciify-aalib(imageUrl, option)`
+
+2. ascii()  
+return <pre> tag
+
+3. svg()  
+return svg+image tag
+
+4. asciified  
+return <pre> tag or Promise.  
+If asiified process already happened, this will return exist <pre> tag, or it returns promise.
+so uou can use this API like below.
+
+```
+Promise.resolve()
+  .then(() => {
+    return myAsc.asciified
+  })
+  .then((pre) => resolve(this.asciified))
+```
+5. asciiWidth / asciiHeight  
+This returns asciified <pre> element's size.
